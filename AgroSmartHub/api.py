@@ -1036,7 +1036,9 @@ def admin_reject_product(pid):
         return jsonify({'success': False, 'error': str(e)}), 500
     finally:
         conn.close()
-
+@app.route("/")
+def home():
+    return "Agro-Smart-Hub API is running!"
 if __name__ == '__main__':
     init_db()
     app.run(host='0.0.0.0', port=5000, debug=True)
