@@ -12,11 +12,11 @@ import pymysql
 import pymysql.cursors
 
 # --- DB configuration ---
-DB_USER = os.environ.get('DB_USER', 'root')
-DB_PASS = os.environ.get('DB_PASS', 'root')
-DB_HOST = os.environ.get('DB_HOST', 'localhost')
-DB_NAME = os.environ.get('DB_NAME', 'agrosmarthub')
-DB_PORT = int(os.environ.get('DB_PORT', 3306))
+DB_HOST=<PGHOST from Railway>
+DB_USER=<PGUSER from Railway>
+DB_PASS=<PGPASSWORD from Railway>
+DB_NAME=agrosmarthub
+DB_PORT=5432
 
 # --- Image Upload Configuration ---
 UPLOAD_FOLDER = os.path.join(os.path.dirname(__file__), 'uploads')
